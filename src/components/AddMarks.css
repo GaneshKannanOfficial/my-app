@@ -1,0 +1,51 @@
+/* AddMarksPage.css */
+.container-custom {
+    max-width: 60rem; /* Larger container for the form */
+  }
+  
+  .card-custom {
+    width: 100%; /* Full width within the container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    border-radius: 0.75rem; /* Rounded corners */
+  }
+  
+  .card-body-custom {
+    padding: 2.5rem; /* Spacious interior */
+  }
+  
+  .form-control-custom, .form-select-custom {
+    background-color: #f8f9fa; /* Off-white background */
+    border: 1px solid #ced4da; /* Subtle border */
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.05); /* Inner shadow */
+  }
+  
+  .button-custom {
+    background-color: #000; /* Black button */
+    border: none;
+    padding: 0.75rem 1.5rem; /* Bigger button */
+    font-size: 1rem; /* Larger font */
+  }
+  
+  .label-custom {
+    display: block;
+    margin-bottom: 0.5rem;
+    background-color: #e9ecef; /* Light grey background */
+    padding: 0.5rem 1rem; /* Padding for labels */
+    border-radius: 0.25rem; /* Rounded label backgrounds */
+    color: #495057; /* Darker text */
+  }
+  
+  .title-custom {
+    color: #212529; /* Dark shade for the title */
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container-custom {
+      max-width: 95%;
+    }
+    .card-body-custom {
+      padding: 2rem; /* Adjusted for smaller screens */
+    }
+  }
+  

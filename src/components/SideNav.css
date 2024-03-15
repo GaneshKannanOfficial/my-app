@@ -1,0 +1,19 @@
+/* SideNav.css */
+.side-nav .nav-link-custom {
+    color: #fff;
+    margin-bottom: 20px; /* Adjust spacing between nav items */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .side-nav .nav-link-custom:hover {
+    background-color: #007bff; /* A lighter shade of the primary color for hover effect */
+    color: #fff;
+    text-decoration: none; /* Removes underline on hover */
+  }
+  
+  /* Additional styling for icons if needed */
+  .side-nav .fas {
+    margin-right: 8px;
+  }
+  

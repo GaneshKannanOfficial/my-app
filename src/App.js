@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import AddStudentPage from './components/AddStudentPage';
+import ViewStudents from './components/ViewStudents';
+import AddMarks from './components/AddMarks';
+import GenerateReport from './components/GenerateReport';
+import Analysis from './components/Analysis'; // Import the Analysis component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Navigate replace to="/add-student" />} />
+        <Route path="/add-student" element={<AddStudentPage />} />
+        <Route path="/view-students" element={<ViewStudents />} />
+        <Route path="/add-marks" element={<AddMarks />} />
+        <Route path="/generate-report" element={<GenerateReport />} />
+        <Route path="/analysis" element={<Analysis />} /> {/* Add the route for Analysis */}
+      </Routes>
+    </Layout>
   );
 }
 

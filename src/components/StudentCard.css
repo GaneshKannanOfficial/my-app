@@ -1,0 +1,55 @@
+.student-card {
+    width: 16rem; /* Maintains the card width */
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24); /* Enhanced shadows */
+    background-color: #fff; /* White background */
+    border-radius: 0.5rem; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centering content vertically */
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow out of the card's rounded corners */
+  }
+  
+  .student-img-container {
+    background-color: #f0f0f0; /* Grey shade for the icon region */
+    padding: 20px 0; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Space between the icon and the card content */
+  }
+  
+  .student-img {
+    width: 20px; /* Adjusted image size */
+    height: 140px; /* Adjusted image size */
+    margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 50%; /* Circular image */
+  }
+  
+  /* Adjustments to the card body to manage height */
+  .card-body {
+    padding: 20px 20px 0 20px; /* Top, Right, Bottom, Left Padding */
+    flex-grow: 1; /* Allows the card body to expand and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Evenly spaces out child elements */
+  }
+  
+  .card-title,
+  .card-subtitle {
+    margin-bottom: 10px; /* Reduced bottom margin */
+  }
+  
+  .scores-container,
+  .actions-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .badge {
+    text-transform: capitalize;
+  }
+  
+
+  
